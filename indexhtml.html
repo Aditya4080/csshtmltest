@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepbytes</title>
+        <style>
+            @media screen {
+                .div1{
+                border: 1px solid white;
+                height: 80px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                background-color: orange;
+            }
+                .a1{
+                    
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    height: 50px;
+                    width: 90px;
+                    margin-left: 800px;
+                    margin-top: 25px;
+                    text-align: center;
+                    background-color: blue;
+                    border-color: blue;
+                    color: white;
+                }
+                .a1:hover{
+                    background-color: yellow;
+                    color: black;
+                }
+                .a2{
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    height: 50px;
+                    width: 90px;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    text-align: center;
+                    background-color: blue;
+                    border-color: blue;
+                    color: white;
+                }
+                .a2:hover{
+                    background-color: yellow;
+                    color: black;
+                }
+                .a3{
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    height: 50px;
+                    width: 90px;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    text-align: center;
+                    background-color: blue;
+                    border-color: blue;
+                    color: white;
+                }
+                .a3:hover{
+                    background-color: yellow;
+                    color: black;
+                }
+                .a4{
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    height: 50px;
+                    width: 90px;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    text-align: center;
+                    background-color: blue;
+                    border-color: blue;
+                    color: white;
+                }
+                .a4:hover{
+                    background-color: yellow;
+                    color: black;
+                }
+            .div2{
+                border: 1px solid white;
+                margin-top: 5px;
+                height: 85%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                
+            }
+                .indiv1{
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    height: 200px;
+                    width: 200px;
+                    margin-left: 80px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: orange;
+                    color: black;
+                    transition: transform 0.3s;
+                }
+                .indiv1:hover{
+                    transform: scale(1.1);
+                    background-color: aqua;
+                }
+                .indiv2{
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    height: 200px;
+                    width: 200px;
+                    margin-left: 10px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: orange;
+                    color: black;
+                    transition: transform 0.3s;
+                }
+                .indiv2:hover{
+                    transform: scale(0.9);
+                    background-color: aqua;
+                }
+                .indiv3{
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    height: 200px;
+                    width: 200px;
+                    margin-left: 10px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: orange;
+                    color: black;
+                    transition: width 0.3s, height 0.3s;
+                }
+                .indiv3:hover{
+                    height: 100px;
+                    width: 200px;
+                    border-radius: 50%;
+                    background-color: aqua;
+                }
+                .indiv4{
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    height: 200px;
+                    width: 200px;
+                    margin-left: 10px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: orange;
+                    color: black;
+                    transform-style: preserve-3d;
+                    transition: transform 1s;
+                }
+                .inner{
+                    height: 100%;
+                    width: 100%;
+                    transform-style: preserve-3d;
+                    position: absolute;
+                }
+                .indiv4:hover{
+                    /* transform: rotateY(180deg); */
+                    -ms-transform-origin-x: 100%;
+                    background-color: aqua;
+                }
+                .inner:hover{
+                    transform: rotateY(180deg);
+                }
+                .front,
+                .back{
+                    border-radius: 5px;
+                    border: 1px solid orange;
+                    height: 100%;
+                    width: 100%;
+                    margin-left: 10px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: orange;
+                    color: black;
+                    transition: transform 1s;
+                    position: absolute;
+                    backface-visibility: hidden;
+                }
+                .back{
+                    transform: rotateY(180deg);
+                }
+                .immg{
+                    padding: 29px;
+                }                
+            }
+
+            @media only screen and (max-width: 425px)  {
+                .a1,.a2,.a3,.a4{
+                    display:none !important;
+                }
+                .div2{
+                    flex-direction: column;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="div1" >
+                <img src="download.png" alt="error" class="immg">
+                <a class="a1">
+                    <p> faker</p>
+    
+                </a>
+                <a class="a2"> 
+                    <p>faker</p>
+    
+                </a>
+                <a class="a3"> 
+                    <p>faker</p>
+    
+                </a>
+                <a class="a4"> 
+                    <p>faker</p>
+    
+                </a>
+            </div>
+            <div class="div2">
+                <div class="indiv1">
+                    <a class="b1">
+                        <p class="p1">Zoom-In</p>
+                    </a>
+                </div>
+            
+                
+                <div class="indiv2">
+                    <a class="b2">
+                        <p>Zoom-Out</p>
+                    </a>
+                </div>
+                
+                
+                <div class="indiv3">
+                    <a class="b2">
+                        <p>Oval</p>
+                    </a>
+                </div>
+        
+               <div class="indiv4">
+                    
+                    <div class="inner">
+                        <div class="front">
+                            <a class="b4">
+                                <p>Left-Right</p>
+                            </a>
+                        </div>
+                        <div class="back">
+                            <a class="b4">
+                                <p>Right-Left</p>
+                            </a>
+                        </div>
+                    </div>
+               </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
